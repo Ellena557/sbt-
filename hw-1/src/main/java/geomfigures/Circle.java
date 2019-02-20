@@ -1,7 +1,6 @@
 package geomfigures;
 
 public class Circle {
-    //радиус круга
     private final double r;
 
     public double getR() {
