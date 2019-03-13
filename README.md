@@ -7,3 +7,5 @@
 1. Unit-тесты
 
 2. Принципы SOLID: smart-home-2019
+
+3. Unit-тесты, iterator + composite: smart-home-2019
