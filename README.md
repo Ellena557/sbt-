@@ -11,3 +11,5 @@
 3. Unit-тесты, iterator + composite: smart-home-2019
 
 4. Декоратор + добавление объекта "сигнализация": smart-home-2019
+
+5. Adapter, spring: smart-home-2019
