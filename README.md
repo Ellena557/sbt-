@@ -13,3 +13,5 @@
 4. Декоратор + добавление объекта "сигнализация": smart-home-2019
 
 5. Adapter, spring: smart-home-2019
+
+6. Command: smart-home-2019
