@@ -8,7 +8,6 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -23,9 +22,11 @@ public class TeamChooser {
             Reader in = new InputStreamReader(getClass().getClassLoader().getResourceAsStream(filename));
             ArrayList<CSVRecord> players = new ArrayList<>();
             Iterable<CSVRecord> records = CSVFormat.DEFAULT.parse(in);
+            
             for (CSVRecord record : records) {
                 players.add(record);
             }
+            
             Collections.sort(players, new Comparator<CSVRecord>() {
                 @Override
                 public int compare(CSVRecord p1, CSVRecord p2) {
@@ -34,6 +35,7 @@ public class TeamChooser {
                             (Double.parseDouble(p2.get(2))*0.5 + Double.parseDouble(p2.get(3))*0.5));
                 }
             });
+            
             try (
                 BufferedWriter writer = Files.newBufferedWriter(Paths.get("team.csv"));
                 CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
