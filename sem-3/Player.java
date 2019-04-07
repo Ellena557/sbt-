@@ -5,6 +5,4 @@ public class Player {
     private String lastname;
     private double speed;
     private double accuracy;
-
-
 }
